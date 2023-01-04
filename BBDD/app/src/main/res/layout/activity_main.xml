@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llContactos"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_above="@id/etTelefono"
+        android:hint="@string/nombre"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:hint="@string/telefono"
+        android:inputType="number"
+        android:maxLength="9"
+        android:layout_above="@id/btnAnadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnAnadir"
+        android:onClick="onClickAnadir"
+        android:text="@string/anadir"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+</RelativeLayout>
