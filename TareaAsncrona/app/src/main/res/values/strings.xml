@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tarea Asíncrona</string>
+    <string name="empezar">Empezar</string>
+    <string name="procesando">Procesando...</string>
+    <string name="procesoTerminado">Proceso terminado</string>
+</resources>
