@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Puzle Colores</string>
+    <string name="fin">Fin de la partida</string>
+    <string name="otraPartida">¿Otra partida?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+</resources>
