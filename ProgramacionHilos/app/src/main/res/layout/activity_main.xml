@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvProgreso"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Hay que poner visibilidad al texto antes que a la barra de progreso-->
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvProgreso"
+        android:layout_above="@+id/btnEmpezar"
+        android:visibility="gone"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:text="@string/empezar"
+        android:onClick="onClickEmpezar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>
